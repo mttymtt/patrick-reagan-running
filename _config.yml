@@ -21,9 +21,8 @@ defaults:
   values:
     layout: page
 permalink: pretty
-
 description: Test site for Patrick
-baseurl: ""
+baseurl: ''
 email: patrickreaganrunning@gmail.com
 instagram_username: patrickreaganrunning
 twitter_username: preaganrunning
