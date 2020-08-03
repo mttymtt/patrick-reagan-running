@@ -2,12 +2,13 @@
 title: Patrick Reagan Running
 timezone: UTC
 collections:
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:name"
   posts:
     title: Posts
     output: true
-  pages:
-    output: true
-    permalink: /:name
   uploads:
     title: Uploads
     output: true
