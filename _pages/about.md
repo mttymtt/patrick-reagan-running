@@ -3,7 +3,7 @@ title: About
 layout: default
 nav: left
 order: 1
-feature-image:
+feature-image: 
 ---
 
 Patrick is a native of Southwestern PA and currently resides in Savannah, GA. He attained a B.S. in Exercise Science while competing in Cross Country/Track and Field at Slippery Rock University. He runs professionally for HOKA One One.
