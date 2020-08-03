@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  pages:
+    output: true
+    permalink: /:name
   uploads:
     title: Uploads
     output: true
@@ -14,7 +17,7 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
+    permalink: "/blog/:title/"
 - scope:
     path: ''
     type: pages
