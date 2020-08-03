@@ -2,28 +2,113 @@
   --color-bg: #fff;
   --color-base: #000;
   --color-accent: #6CA04B;
+  --color-accent-invert: #935fb4;
+
+  --width-s: 35rem;
+  --width-m: 1000px;
+  --width-l: 1440px;
+
+  --font-size: 16px;
+  --font-small: 0.75em;
+  --font-mono: monospace;
+  --line-height: 1.425;
+}
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  :root {
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  :root {
+    --font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  :root {
+  }
 }
 
 html, body {
   margin: 0;
 }
 
-body {
+/* ---------- TYPOGRAPHY ---------- */
 
+html {
+  font-family: sans-serif;
+  font-size: var(--font-size);
 }
 
-/* ---------- TYPOGRAPHY ---------- */
+body {
+  line-height: var(--line-height);
+
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+
+  -webkit-hyphens: auto;
+	-webkit-hyphenate-limit-before: 4;
+	-webkit-hyphenate-limit-after: 3;
+	-webkit-hyphenate-limit-chars: 7 4 3;
+	-webkit-hyphenate-limit-lines: 2;
+	-webkit-hyphenate-limit-zone: 8%;
+	-webkit-hyphenate-limit-last: always;
+
+	-moz-hyphens: auto;
+	-moz-hyphenate-limit-chars: 7 4 3;
+	-moz-hyphenate-limit-lines: 2;
+	-moz-hyphenate-limit-zone: 8%;
+	-moz-hyphenate-limit-last: always;
+
+	-ms-hyphens: auto;
+	-ms-hyphenate-limit-chars: 7 4 3;
+	-ms-hyphenate-limit-lines: 2;
+	-ms-hyphenate-limit-zone: 8%;
+	-ms-hyphenate-limit-last: always;
+
+	hyphens: auto;
+	hyphenate-limit-chars: 7 4 3;
+	hyphenate-limit-lines: 2;
+	hyphenate-limit-zone: 8%;
+	hyphenate-limit-last: always;
+}
 
 a {
   color: #000;
+  -webkit-transition: all .1s ease-in-out;
+  -webkit-transition: color, background;
+  -moz-transition: all .1s ease-in-out;
+  -moz-transition: color, background;
+  -ms-transition: all .1s ease-in-out;
+  -ms-transition: color, background;
+  -o-transition: all .1s ease-in-out;
+  -o-transition: color, background;
+  transition: all .1s ease-in-out;
+  transition-property: color, background;
 }
 
 a:hover {
   color: var(--color-accent);
 }
 
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1;
+}
+
 h1 {
   font-family: "Nichrome";
+  font-size: 3em;
+  text-align: center;
 }
 
 /* ---------- HEADER ---------- */
@@ -32,9 +117,16 @@ header {
   align-items: center;
   display: flex;
   font-family: "Nichrome";
+  font-size: 16px;
   justify-content: space-between;
   letter-spacing: 0.05em;
   padding: 20px;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+header:hover {
+  background: var(--color-bg);
 }
 
 header a {
@@ -53,6 +145,7 @@ header .site-title {
 }
 
 header .site-title h1 {
+  font-size: 2em;
   margin: 0;
 }
 
@@ -86,6 +179,34 @@ header .nav a.coaching.active {
   color: var(--color-bg);
 }
 
+/* Invert colors when overlaying content on site */
+
+/* @supports (mix-blend-mode: difference) {
+  header {
+    background: var(--color-base);
+    mix-blend-mode: difference;
+  }
+
+  header a {
+    color: var(--color-bg);
+  }
+
+  header a:hover {
+    color: var(--color-accent-invert);
+  }
+
+  header a.coaching {
+    border: 2px solid var(--color-accent-invert);
+    color: var(--color-accent-invert);
+  }
+
+  header a.coaching:hover,
+  header .nav a.coaching.active {
+    background: var(--color-accent-invert);
+    color: var(--color-base);
+  }
+} */
+
 /* ---------- FOOTER ---------- */
 
 footer {
@@ -96,4 +217,40 @@ footer {
 footer,
 footer a {
   color: var(--color-bg);
+}
+
+/* ---------- CONTENT ---------- */
+
+.content {
+  margin: 0 auto;
+}
+
+.content * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content > p,
+.content > blockquote,
+.content > h1,
+.content > h2,
+.content > h3,
+.content > ol,
+.content > ul,
+.content > details {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: var(--width-s);
+}
+
+h1.page-title {
+  max-width: var(--width-m);
+}
+
+.post-date {
+  font-family: var(--font-mono);
+  font-size: var(--font-small);
+  margin-bottom: 4em;
+  max-width: var(--width-s);
+  text-align: center;
 }
