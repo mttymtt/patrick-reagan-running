@@ -6,6 +6,12 @@ layout: base
 
 <div class="content-container">
   <div class="content">
+    {% if page.feature-image %}
+      <div class="feature-image">
+        <img src="{{ feature-image }}">
+      </div>
+    {% endif %}
+
     {% if page.title %}
       {% if page.url != "/" %}
         <h1 class="page-title">
@@ -15,7 +21,6 @@ layout: base
             {{ page.title }}
           {% endif %}
         </h1>
-        </div>
       {% endif %}
     {% endif %}
 
