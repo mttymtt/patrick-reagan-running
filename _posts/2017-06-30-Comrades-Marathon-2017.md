@@ -6,11 +6,15 @@ layout: default
 
 Zinikele is the best starting point for this blog entry today. The english translation is (roughly), It Takes All of You. The Comrades Marathon is the oldest and biggest ultramarathon in the world. How does it feel to line up with 21,000 other runners committing to an 87 Kilometer Race at a blistering pace on the road? Kind of like this…
 
+![Comrades_2017_StartPic.jpg](/uploads/Comrades_2017_StartPic.jpg)
+
 Each year, the Comrades Marathon changes direction. My debut Comrades in 2017 would be an Up Year with 6,400 feet of climbing and 4,500 feet of decent. The first 40K of the 87K race is uphill, with many climbs lasting 4-7 kilometers before slightly descending. The remainder of the course was on rolling terrain with only a few significant climbs. All miles are on pavement.
 
 The energy on the starting line is electric! Ten minutes to the gun, our elite field was led to a partitioned area at the front of the race. We were packed in like sardines. The South African national anthem is played in three different languages, with English being played first. After the Anthem, the Chariots of Fire theme song plays...then a rooster crows....then the gun....
 
 At the mile, I passed through in 5:50 in at least 400th Place....Let that process.....going out in a 55 mile race in 5:51, but only being in 400th place. In the early stages of the race, I followed my team manager Nick Bester's advice of sitting 100 meters off the large pack of men in order to run the tangents of the course and have easy access to aid. Running off the big pack with a smaller group of smart racers aligned well with my game plan to focus on fueling and thermoregulation early in the race. I ran very relaxed at around 6:25 per mile in the first 15K.
+
+![7e94d71c3c01debadeab5b500cd085eb_DSC_4032.JPG](/uploads/7e94d71c3c01debadeab5b500cd085eb_DSC_4032.JPG)
 
 I found myself with experienced racers like Fritjof Fagerlund (Sweden), Steve Way (UK), and Renier Grobler (South Africa). We were sitting in 105-115th place through the 17K checkpoint.
 
