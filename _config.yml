@@ -2,6 +2,10 @@
 title: Patrick Reagan Running
 timezone: UTC
 collections:
+  pages:
+    title: Pages
+    output: true
+    permalink: "/:name"
   posts:
     title: Posts
     output: true
@@ -14,7 +18,7 @@ defaults:
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
+    permalink: "/blog/:title/"
 - scope:
     path: ''
     type: pages
