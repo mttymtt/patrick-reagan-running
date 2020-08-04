@@ -1,9 +1,29 @@
+{% include subscribe.html %}
+
 <footer>
-  <a href="/"><h1 class="site-title">Patrick Reagan Running</h1></a>
-  <a {% if page.url == page.url %}class="active"{% endif %} href="">About</a>
-  <a {% if page.url == page.url %}class="active"{% endif %} href="">Contact</a>
-  <a {% if page.url == page.url %}class="active"{% endif %} href="">Sponsors</a>
-  <a {% if page.url == page.url %}class="active"{% endif %} href="">Race Schedule</a>
-  <a {% if page.url == page.url %}class="active"{% endif %} href="">Media</a>
-  <a class="coaching {% if page.url == page.url %}active{% endif %}" href="">Coaching</a>
+  <div class="footer-inner">
+    <div class="footer-section">
+      <h2>General</h2>
+      {% assign navigation = site.pages | sort: "order" %}
+      {% for item in navigation %}
+        {% if item.nav == "left" %}
+          <a class="{{ item.title | slugify }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% assign navigation = site.pages | sort: "order" %}
+      {% for item in navigation %}
+        {% if item.nav == "right" %}
+          <a class="{{ item.title | slugify }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="footer-section">
+      <h2>Social Media</h2>
+      <a href="{{ site.strava_URL }}">Strava</a>
+      <a href="{{ site.instagram_URL }}">Instagram</a>
+      <a href="{{ site.twitter_URL }}">Twitter</a>
+      <a href="{{ site.facebook_URL }}">Facebook</a>
+    </div>
+  </div>
 </footer>

@@ -13,3 +13,11 @@
 	font-style: normal;
 	font-stretch: normal;
 }
+
+@font-face {
+	font-family: 'Pitch';
+	src: url('../fonts/PitchTest-Medium.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+}

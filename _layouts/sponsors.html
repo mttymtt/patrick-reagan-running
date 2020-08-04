@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<hr />
+
+{% if page.sponsors %}
+  <div class="sponsors-container width-l">
+  {% for sponsor in page.sponsors %}
+    <div class="sponsor">
+      {% if sponsor.logo %}
+        <div class="sponsor-logo">
+          <div>
+            <img alt="{{ sponsor.name }}" src="{{ sponsor.logo }}">
+          </div>
+        </div>
+      {% else %}
+        <h2 class="sponsor-name">{{ sponsor.name }}</h2>
+      {% endif %}
+      <p class="sponsor-description">
+        {% if sponsor.description %}
+          {{ sponsor.description }}
+        {% endif %}
+      </p>
+    </div>
+  {% endfor %}
+  </div>
+{% endif %}
