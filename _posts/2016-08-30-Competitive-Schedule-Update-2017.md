@@ -1,5 +1,5 @@
 ---
-title: "Competitive Schedule Update: 2017"
+title: 'Competitive Schedule Update: 2017'
 date: 2016-08-30 00:00:00 Z
 ---
 

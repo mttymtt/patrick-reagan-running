@@ -1,5 +1,5 @@
 ---
-title: "Announcing 2016-2017 Competitive Schedule"
+title: Announcing 2016-2017 Competitive Schedule
 date: 2015-12-08 00:00:00 Z
 ---
 

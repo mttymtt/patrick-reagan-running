@@ -1,5 +1,5 @@
 ---
-title: "Enjoying the Process—UltraVasan 90K"
+title: Enjoying the Process—UltraVasan 90K
 date: 2016-08-26 00:00:00 Z
 feature-image: "/uploads/UltraVasan SprintPris.jpg"
 ---

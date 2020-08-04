@@ -1,5 +1,5 @@
 ---
-title: "USATF 100K Road National Championships"
+title: USATF 100K Road National Championships
 date: 2016-04-17 00:00:00 Z
 ---
 
