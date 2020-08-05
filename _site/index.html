@@ -25,8 +25,15 @@
   </head>
 
 
-  <body id="patrick-reagan-running">
-    <header>
+  <body id="the-ultra-wizard-rambler">
+    <header class="mobile">
+  <div class="bar">
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button">Menu</button>
+  </div>
+
   <div class="nav">
     
     
@@ -52,14 +59,6 @@
         <a class="blog " href="/blog">Blog</a>
       
     
-  </div>
-
-  <div class="site-title">
-    <a href="/"><h1>Patrick Reagan Running</h1></a>
-  </div>
-
-  <div class="nav">
-    
     
       
     
@@ -84,18 +83,85 @@
   </div>
 </header>
 
-
-<div class="content-container">
-  <div class="content">
-    
-
-    
+<header class="desktop">
+  <div class="bar">
+    <div class="nav">
       
-    
+      
+        
+          <a class="about " href="/about">About</a>
+        
+      
+        
+      
+        
+          <a class="contact " href="/contact">Contact</a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="sponsors " href="/sponsors">Sponsors</a>
+        
+      
+        
+          <a class="blog " href="/blog">Blog</a>
+        
+      
+    </div>
 
-    <p>This is the home page</p>
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
 
+    <div class="nav">
+      
+      
+        
+      
+        
+          <a class="race-schedule " href="/race-schedule">Race Schedule</a>
+        
+      
+        
+      
+        
+          <a class="media " href="/media">Media</a>
+        
+      
+        
+          <a class="coaching " href="/coaching">Coaching</a>
+        
+      
+        
+      
+        
+      
+    </div>
   </div>
+</header>
+
+
+<div class="home-feature">
+  
+    <div class="feature-image">
+      <div class="crop">
+        <div>
+          <img src="/uploads/82099913_1335264463328354_2462796219609513984_o.jpg">
+        </div>
+      </div>
+    </div>
+  
+
+  
+    <div class="page-info">
+      <h1 class="page-title">
+        The Ultra Wizard Rambler
+      </h1>
+    </div>
+  
 </div>
 
 <div class="subscribe-container">
@@ -124,7 +190,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-section">
-      <h2>General</h2>
+      <h3>General</h3>
       
       
         
@@ -174,7 +240,7 @@
       
     </div>
     <div class="footer-section">
-      <h2>Social Media</h2>
+      <h3>Social Media</h3>
       <a href="https://www.strava.com/pros/10014836">Strava</a>
       <a href="https://instagram.com/patrickreaganrunning">Instagram</a>
       <a href="https://twitter.com/preaganrunning">Twitter</a>
@@ -185,4 +251,38 @@
 
 
   </body>
+
+  <script>
+    let scrollpos = window.scrollY
+    const mobileHeader = document.querySelector("header.mobile")
+    const mobileHeader_height = mobileHeader.offsetHeight
+
+    const desktopHeader = document.querySelector("header.desktop")
+    const desktopHeader_height = desktopHeader.offsetHeight
+
+    const mobile_add = () => mobileHeader.classList.add("scrolled")
+    const mobile_remove = () => mobileHeader.classList.remove("scrolled")
+
+    const desktop_add = () => desktopHeader.classList.add("scrolled")
+    const desktop_remove = () => desktopHeader.classList.remove("scrolled")
+
+    window.addEventListener('scroll', function() {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= mobileHeader_height) { mobile_add() }
+      else { mobile_remove() };
+
+      if (scrollpos >= desktopHeader_height) { desktop_add() }
+      else { desktop_remove() }
+    });
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var header = document.querySelector("header");
+      if (header.classList.contains('open')) {
+       header.classList.remove('open');
+      } else {
+        header.classList.add('open');
+      }
+    });
+  </script>
 </html>

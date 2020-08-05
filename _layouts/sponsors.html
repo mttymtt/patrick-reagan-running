@@ -9,7 +9,11 @@ layout: default
 {% if page.sponsors %}
   <div class="sponsors-container width-l">
   {% for sponsor in page.sponsors %}
+    {% if sponsor.url %}
+    <a class="sponsor" href="{{ sponsor.url }}" target="_blank">
+    {% else %}
     <div class="sponsor">
+    {% endif %}
       {% if sponsor.logo %}
         <div class="sponsor-logo">
           <div>
@@ -24,7 +28,11 @@ layout: default
           {{ sponsor.description }}
         {% endif %}
       </p>
+    {% if sponsor.url %}
+    </a>
+    {% else %}
     </div>
+    {% endif %}
   {% endfor %}
   </div>
 {% endif %}

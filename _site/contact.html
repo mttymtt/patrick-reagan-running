@@ -26,7 +26,14 @@
 
 
   <body id="contact">
-    <header>
+    <header class="mobile">
+  <div class="bar">
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button">Menu</button>
+  </div>
+
   <div class="nav">
     
     
@@ -52,14 +59,6 @@
         <a class="blog " href="/blog">Blog</a>
       
     
-  </div>
-
-  <div class="site-title">
-    <a href="/"><h1>Patrick Reagan Running</h1></a>
-  </div>
-
-  <div class="nav">
-    
     
       
     
@@ -84,6 +83,66 @@
   </div>
 </header>
 
+<header class="desktop">
+  <div class="bar">
+    <div class="nav">
+      
+      
+        
+          <a class="about " href="/about">About</a>
+        
+      
+        
+      
+        
+          <a class="contact active" href="/contact">Contact</a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="sponsors " href="/sponsors">Sponsors</a>
+        
+      
+        
+          <a class="blog " href="/blog">Blog</a>
+        
+      
+    </div>
+
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+
+    <div class="nav">
+      
+      
+        
+      
+        
+          <a class="race-schedule " href="/race-schedule">Race Schedule</a>
+        
+      
+        
+      
+        
+          <a class="media " href="/media">Media</a>
+        
+      
+        
+          <a class="coaching " href="/coaching">Coaching</a>
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+</header>
+
 
 <div class="content-container">
   <div class="content">
@@ -101,11 +160,30 @@
       
     
 
-    <p>Contact Patrick by email at patrickreaganrunning@gmail.com
-Like him on Facebook at /patrickreaganrunning to get updates on recent race results
-Follow his blog to read about his latest experiences at patrickreaganrunning.blogspot.com
-Follow him on Instagram @patrickreaganrunning
-Follow him on Twitter @preaganrunning</p>
+    <table>
+  <tbody>
+    <tr>
+      <td>Email</td>
+      <td>patrickreaganrunning@gmail.com</td>
+    </tr>
+    <tr>
+      <td>Strava</td>
+      <td><a href="https://www.strava.com/pros/10014836">Patrick Reagan</a></td>
+    </tr>
+    <tr>
+      <td>Instagram</td>
+      <td><a href="https://instagram.com/patrickreaganrunning">@patrickreaganrunning</a></td>
+    </tr>
+    <tr>
+      <td>Twitter</td>
+      <td><a href="https://twitter.com/preaganrunning">@preaganrunning</a></td>
+    </tr>
+    <tr>
+      <td>Facebook</td>
+      <td><a href="https://www.facebook.com/patrickreaganrunning">/patrickreaganrunning</a></td>
+    </tr>
+  </tbody>
+</table>
 
   </div>
 </div>
@@ -136,7 +214,7 @@ Follow him on Twitter @preaganrunning</p>
 <footer>
   <div class="footer-inner">
     <div class="footer-section">
-      <h2>General</h2>
+      <h3>General</h3>
       
       
         
@@ -186,7 +264,7 @@ Follow him on Twitter @preaganrunning</p>
       
     </div>
     <div class="footer-section">
-      <h2>Social Media</h2>
+      <h3>Social Media</h3>
       <a href="https://www.strava.com/pros/10014836">Strava</a>
       <a href="https://instagram.com/patrickreaganrunning">Instagram</a>
       <a href="https://twitter.com/preaganrunning">Twitter</a>
@@ -197,4 +275,38 @@ Follow him on Twitter @preaganrunning</p>
 
 
   </body>
+
+  <script>
+    let scrollpos = window.scrollY
+    const mobileHeader = document.querySelector("header.mobile")
+    const mobileHeader_height = mobileHeader.offsetHeight
+
+    const desktopHeader = document.querySelector("header.desktop")
+    const desktopHeader_height = desktopHeader.offsetHeight
+
+    const mobile_add = () => mobileHeader.classList.add("scrolled")
+    const mobile_remove = () => mobileHeader.classList.remove("scrolled")
+
+    const desktop_add = () => desktopHeader.classList.add("scrolled")
+    const desktop_remove = () => desktopHeader.classList.remove("scrolled")
+
+    window.addEventListener('scroll', function() {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= mobileHeader_height) { mobile_add() }
+      else { mobile_remove() };
+
+      if (scrollpos >= desktopHeader_height) { desktop_add() }
+      else { desktop_remove() }
+    });
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var header = document.querySelector("header");
+      if (header.classList.contains('open')) {
+       header.classList.remove('open');
+      } else {
+        header.classList.add('open');
+      }
+    });
+  </script>
 </html>

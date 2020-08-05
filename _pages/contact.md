@@ -5,8 +5,8 @@ nav: left
 order: 2
 ---
 
-Contact Patrick by email at patrickreaganrunning@gmail.com
-Like him on Facebook at /patrickreaganrunning to get updates on recent race results
-Follow his blog to read about his latest experiences at patrickreaganrunning.blogspot.com
-Follow him on Instagram @patrickreaganrunning
-Follow him on Twitter @preaganrunning
+Email | patrickreaganrunning@gmail.com
+Strava | [{{ site.strava_username }}]({{ site.strava_URL }})
+Instagram | [@{{ site.instagram_username }}]({{ site.instagram_URL }})
+Twitter | [@{{ site.twitter_username }}]({{ site.twitter_URL }})
+Facebook | [/{{ site.facebook_username }}]({{ site.facebook_URL }})

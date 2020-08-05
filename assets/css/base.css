@@ -44,7 +44,6 @@ table {
 }
 
 img, iframe {
-  height: auto;
   vertical-align: bottom;
   max-width: 100%;
 }

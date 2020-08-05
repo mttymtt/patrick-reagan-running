@@ -1,4 +1,11 @@
-<header>
+<header class="mobile">
+  <div class="bar">
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button">Menu</button>
+  </div>
+
   <div class="nav">
     {% assign navigation = site.pages | sort: "order" %}
     {% for item in navigation %}
@@ -6,18 +13,36 @@
         <a class="{{ item.title | slugify }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
       {% endif %}
     {% endfor %}
-  </div>
-
-  <div class="site-title">
-    <a href="/"><h1>Patrick Reagan Running</h1></a>
-  </div>
-
-  <div class="nav">
-    {% assign navigation = site.pages | sort: "order" %}
     {% for item in navigation %}
       {% if item.nav == "right" %}
         <a class="{{ item.title | slugify }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
       {% endif %}
     {% endfor %}
+  </div>
+</header>
+
+<header class="desktop">
+  <div class="bar">
+    <div class="nav">
+      {% assign navigation = site.pages | sort: "order" %}
+      {% for item in navigation %}
+        {% if item.nav == "left" %}
+          <a class="{{ item.title | slugify }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+
+    <div class="nav">
+      {% assign navigation = site.pages | sort: "order" %}
+      {% for item in navigation %}
+        {% if item.nav == "right" %}
+          <a class="{{ item.title | slugify }} {% if page.url == item.url %}active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
 </header>

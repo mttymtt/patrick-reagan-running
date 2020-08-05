@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+{% include header.html %}
+
+<div class="home-feature">
+  {% if page.feature-image %}
+    <div class="feature-image">
+      <div class="crop">
+        <div>
+          <img src="{{ page.feature-image }}">
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if page.title %}
+    <div class="page-info">
+      <h1 class="page-title">
+        {{ page.title }}
+      </h1>
+    </div>
+  {% endif %}
+</div>
+
+{% include footer.html %}

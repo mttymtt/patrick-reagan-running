@@ -26,7 +26,14 @@
 
 
   <body id="about">
-    <header>
+    <header class="mobile">
+  <div class="bar">
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+    <button class="menu-toggle" id="menu-toggle" type="button">Menu</button>
+  </div>
+
   <div class="nav">
     
     
@@ -52,14 +59,6 @@
         <a class="blog " href="/blog">Blog</a>
       
     
-  </div>
-
-  <div class="site-title">
-    <a href="/"><h1>Patrick Reagan Running</h1></a>
-  </div>
-
-  <div class="nav">
-    
     
       
     
@@ -81,6 +80,66 @@
     
       
     
+  </div>
+</header>
+
+<header class="desktop">
+  <div class="bar">
+    <div class="nav">
+      
+      
+        
+          <a class="about active" href="/about">About</a>
+        
+      
+        
+      
+        
+          <a class="contact " href="/contact">Contact</a>
+        
+      
+        
+      
+        
+      
+        
+          <a class="sponsors " href="/sponsors">Sponsors</a>
+        
+      
+        
+          <a class="blog " href="/blog">Blog</a>
+        
+      
+    </div>
+
+    <div class="site-title">
+      <a href="/"><h1>Patrick Reagan Running</h1></a>
+    </div>
+
+    <div class="nav">
+      
+      
+        
+      
+        
+          <a class="race-schedule " href="/race-schedule">Race Schedule</a>
+        
+      
+        
+      
+        
+          <a class="media " href="/media">Media</a>
+        
+      
+        
+          <a class="coaching " href="/coaching">Coaching</a>
+        
+      
+        
+      
+        
+      
+    </div>
   </div>
 </header>
 
@@ -111,9 +170,90 @@
 
 <p>Patrick has raced States side and internationally, travelling to New Zealand to race in Tarawera, South Africa to race in Comrades 89K and also three trips to Sweden for the UltraVasan 90K.</p>
 
-<p>After graduating from university, Patrick played Washboard Percussion and Tenor Guitar in several ragtime bands based out of New Orleans, LA and Savannah, GA. Reagan toured through 36 states with the groups he played with in 2009-2011. Following his musical career, he spent three years in the tricycle taxi transportation industry for Savannah Pedicab.</p>
+<p>After graduating from university, Patrick played Washboard Percussion and Tenor Guitar in several ragtime bands based out of New Orleans, LA and Savannah, GA. Reagan toured through 36 states with the groups he played with in 2009-2011. Following his musical career, he spent three years in the tricycle taxi transportation industry for <a href="http://www.savannahpedicab.com/">Savannah Pedicab</a>.</p>
 
 <p>When not running, Patrick is listening to Pre-WW2 jug band, ragtime, and jazz records. He also has a healthy infatuation with Science Fiction, Fantasy, and Historical Fiction novels. Reagan lives in Savannah, GA with his wife, Adrienne and their two dogs and two cats.</p>
+
+<h2 id="career-highlights">Career Highlights</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Race</th>
+      <th>Year</th>
+      <th>Time</th>
+      <th>Place</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Javelina Jundred 100M</td>
+      <td>2019</td>
+      <td>13:11:48</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <td>Javelina Jundred 100M</td>
+      <td>2018</td>
+      <td>13:42:59</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <td>Javelina Jundred 100M</td>
+      <td>2018</td>
+      <td>13:01:14 (Course Record)</td>
+      <td>1st</td>
+    </tr>
+    <tr>
+      <td>UltraVasan 90K</td>
+      <td>2018</td>
+      <td>6:10:23</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <td>UltraVasan 90K</td>
+      <td>2017</td>
+      <td>6:08:48</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <td>UltraVasan 90K</td>
+      <td>2017</td>
+      <td>6:18:12</td>
+      <td>2nd</td>
+    </tr>
+    <tr>
+      <td>Comrades Marathon 89K</td>
+      <td>2017</td>
+      <td>5:53:28</td>
+      <td>12th</td>
+    </tr>
+    <tr>
+      <td>IAU 100K World Championships</td>
+      <td>2016</td>
+      <td>6:35.42</td>
+      <td>3rd</td>
+    </tr>
+    <tr>
+      <td>USATF Olympic Trials Marathon</td>
+      <td>2016</td>
+      <td>2:23:30</td>
+      <td>33rd</td>
+    </tr>
+    <tr>
+      <td>Jacksonville Bank 1/2 Marathon</td>
+      <td>2016</td>
+      <td>1:04:29</td>
+      <td>13th</td>
+    </tr>
+    <tr>
+      <td>2 X NCAA Division II Cross Country All-American</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
 
   </div>
 </div>
@@ -144,7 +284,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-section">
-      <h2>General</h2>
+      <h3>General</h3>
       
       
         
@@ -194,7 +334,7 @@
       
     </div>
     <div class="footer-section">
-      <h2>Social Media</h2>
+      <h3>Social Media</h3>
       <a href="https://www.strava.com/pros/10014836">Strava</a>
       <a href="https://instagram.com/patrickreaganrunning">Instagram</a>
       <a href="https://twitter.com/preaganrunning">Twitter</a>
@@ -205,4 +345,38 @@
 
 
   </body>
+
+  <script>
+    let scrollpos = window.scrollY
+    const mobileHeader = document.querySelector("header.mobile")
+    const mobileHeader_height = mobileHeader.offsetHeight
+
+    const desktopHeader = document.querySelector("header.desktop")
+    const desktopHeader_height = desktopHeader.offsetHeight
+
+    const mobile_add = () => mobileHeader.classList.add("scrolled")
+    const mobile_remove = () => mobileHeader.classList.remove("scrolled")
+
+    const desktop_add = () => desktopHeader.classList.add("scrolled")
+    const desktop_remove = () => desktopHeader.classList.remove("scrolled")
+
+    window.addEventListener('scroll', function() {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= mobileHeader_height) { mobile_add() }
+      else { mobile_remove() };
+
+      if (scrollpos >= desktopHeader_height) { desktop_add() }
+      else { desktop_remove() }
+    });
+
+    document.getElementById('menu-toggle').addEventListener('click', function () {
+      var header = document.querySelector("header");
+      if (header.classList.contains('open')) {
+       header.classList.remove('open');
+      } else {
+        header.classList.add('open');
+      }
+    });
+  </script>
 </html>

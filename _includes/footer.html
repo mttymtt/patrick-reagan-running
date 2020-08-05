@@ -3,7 +3,7 @@
 <footer>
   <div class="footer-inner">
     <div class="footer-section">
-      <h2>General</h2>
+      <h3>General</h3>
       {% assign navigation = site.pages | sort: "order" %}
       {% for item in navigation %}
         {% if item.nav == "left" %}
@@ -19,7 +19,7 @@
       {% endfor %}
     </div>
     <div class="footer-section">
-      <h2>Social Media</h2>
+      <h3>Social Media</h3>
       <a href="{{ site.strava_URL }}">Strava</a>
       <a href="{{ site.instagram_URL }}">Instagram</a>
       <a href="{{ site.twitter_URL }}">Twitter</a>
