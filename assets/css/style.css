@@ -50,7 +50,7 @@ html, body {
 /* ---------- TYPOGRAPHY ---------- */
 
 html {
-  font-family: Georgia;
+  font-family: "Inter", Georgia;
   font-size: var(--font-size);
 }
 
@@ -295,9 +295,14 @@ header.mobile .site-title {
   max-width: 100%;
 }
 
-header.mobile .menu-toggle {
+header.mobile button.menu-toggle {
+  font-family: "Nichrome";
   position: absolute;
   right: 1rem;
+}
+
+header.mobile button.menu-toggle:hover {
+  color: var(--color-accent);
 }
 
 header.mobile .nav {
@@ -306,17 +311,24 @@ header.mobile .nav {
   flex-direction: column;
   padding: 1rem;
   position: absolute;
+  visibility: hidden;
   z-index: -1;
 
-  -webkit-transition: transform .2s ease-in-out;
-  -moz-transition: transform .2s ease-in-out;
-  -ms-transition: transform .2s ease-in-out;
-  -o-transition: transform .2s ease-in-out;
-  transition: transform .2s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -webkit-transition: transform, visibility;
+  -moz-transition: all .3s ease-in-out;
+  -moz-transition: transform, visibility;
+  -ms-transition: all .3s ease-in-out;
+  -ms-transition: transform, visibility;
+  -o-transition: all .3s ease-in-out;
+  -o-transition: transform, visibility;
+  transition: all .3s ease-in-out;
+  transition-property: transform, visibility;
 }
 
 header.mobile.open .nav {
   transform: translateY(100%);
+  visibility: visible;
 }
 
 header.mobile .nav a {
@@ -688,6 +700,7 @@ footer .footer-inner .footer-section h2 {
 
 .home-feature {
   display: flex;
+  justify-content: center;
   width: 100%;
 }
 
@@ -710,16 +723,17 @@ footer .footer-inner .footer-section h2 {
 }
 
 .home-feature .feature-image .crop {
-  padding-bottom: 100vh;
+  padding-bottom: 90vh;
 }
 
-.home-feature .page-info {
+.home-feature .feature-card {
   align-self: center;
   color: white;
   display: flex;
   font-size: 3vw;
   justify-content: center;
   margin: 0;
+  max-width: var(--width-m);
   position: absolute;
   width: 100%;
   z-index: 1;
