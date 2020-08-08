@@ -1,0 +1,24 @@
+{% if page.feature-image %}
+  <div class="primary-feature">
+      <div class="feature-image">
+        <div class="crop">
+          <div>
+            <img src="{{ page.feature-image }}">
+          </div>
+        </div>
+        {% if page.feature-credit %}
+          <div class="feature-credit">
+            Photo: {% if page.feature-credit-link %}<a href="{{ page.feature-credit-link }}" target="_blank">{% endif %}{{ page.feature-credit }}{% if page.feature-credit-link %}</a>{% endif %}
+          </div>
+        {% endif %}
+      </div>
+
+    {% if page.title %}
+      <div class="feature-card">
+        <h1 class="feature-title">
+          {{ page.title }}
+        </h1>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

@@ -3,7 +3,7 @@ title: About
 nav: left
 order: 1
 feature-image: "/uploads/84561534_2780225315367670_1043716235914641408_o.jpg"
-layout: default
+layout: page
 ---
 
 Patrick is a native of Southwestern PA and currently resides in Savannah, GA. He attained a B.S. in Exercise Science while competing in Cross Country/Track and Field at Slippery Rock University. He runs professionally for HOKA One One.
@@ -30,4 +30,10 @@ Comrades Marathon 89K | 2017 | 5:53:28 | 12th
 IAU 100K World Championships | 2016 | 6:35.42 | 3rd
 USATF Olympic Trials Marathon | 2016 | 2:23:30 | 33rd
 Jacksonville Bank 1/2 Marathon | 2016 | 1:04:29 | 13th
-2 X NCAA Division II Cross Country All-American | | |
+
+## Awards & Accolades
+
+Name | Year
+---- | ----
+2 X NCAA Division II Cross Country All-American | 2007-2008
+Ultrarunner of the Year | 2017

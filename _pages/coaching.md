@@ -1,6 +1,6 @@
 ---
 title: Coaching
-layout: default
+layout: page
 nav: right
 order: 3
 feature-image: "/uploads/107846252_1478107939044005_3502678647649020939_o.jpg"
@@ -19,3 +19,7 @@ Patrick began private coaching in 2015 and coaches runners all across the nation
 Patrick is the director of PERC Group Run. The run meets at 8:00am once a month (dates determined monthly) at PERC Coffee Headquarters at 1802 E Broad St, Savannah, GA. Find out more about PERC Coffee Roasters and the PERC Group Run by following the flyer link below.
 
 For coaching inquiries, please email Patrick at patrickreaganrunning@gmail.com
+
+<div class="width-s button large">
+  <a href="mailto:patrickreaganrunning@gmail.com?subject=Coaching%20Inquiry">Get in touch</a>
+</div>
