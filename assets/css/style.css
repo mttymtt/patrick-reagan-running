@@ -49,6 +49,10 @@ html, body {
 
 /* ---------- TYPOGRAPHY ---------- */
 
+::selection {
+  background: rgba(255, 239, 68, 0.5);
+}
+
 html {
   font-family: "Inter", Georgia;
   font-size: var(--font-size);
@@ -231,6 +235,19 @@ td {
 }
 
 /* ---------- IMAGES ---------- */
+
+p img {
+  display: flex;
+  margin: 3rem 0;
+}
+
+p + p.caption {
+  color: var(--color-dark-gray);
+  font-size: var(--font-small);
+  margin-top: -2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
 
 .crop {
   height: 0;
@@ -612,7 +629,6 @@ footer .footer-inner {
   justify-content: space-between;
   margin: 0 auto;
   max-width: var(--width-s);
-  padding-top: 2rem;
   width: 100%;
 }
 
@@ -733,7 +749,7 @@ footer .footer-inner .footer-section h2 {
   font-size: 3vw;
   justify-content: center;
   margin: 0;
-  max-width: var(--width-m);
+  max-width: 70vw;
   position: absolute;
   width: 100%;
   z-index: 1;
